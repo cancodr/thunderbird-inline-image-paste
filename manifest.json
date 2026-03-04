@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Inline Image Paste Plus",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Paste clipboard images inline in Thunderbird with PNG, JPG, or automatic format selection.",
   "author": "Cancodr",
   "homepage_url": "https://github.com/Cancodr/thunderbird-inline-image-paste",
