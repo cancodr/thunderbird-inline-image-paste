@@ -29,12 +29,14 @@
     "default_title": "Inline Paste",
     "default_popup": "popup.html",
     "default_icon": {
-      "32": "icons/icon-32.png"
+      "32": "icons/icon-32.png",
+      "64": "icons/icon-64.png"
     }
   },
 
   "icons": {
-    "32": "icons/icon-32.png"
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png"
   },
 
   "options_ui": {
