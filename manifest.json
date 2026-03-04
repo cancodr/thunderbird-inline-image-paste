@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Inline Image Paste Plus",
+  "version": "0.3.2",
+  "permissions": [
+    "compose",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "compose_action": {
+    "default_title": "Inline Paste",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "icons/icon-32.png"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

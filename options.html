@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Inline Image Paste Plus Options</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; padding: 16px; }
+    label { display: block; margin: 10px 0 4px; }
+    input[type="number"] { width: 140px; }
+    .row { margin-bottom: 12px; }
+    .hint { color: #555; font-size: 0.9em; }
+    button { padding: 6px 10px; }
+  </style>
+</head>
+<body>
+  <h2>Inline Image Paste Plus</h2>
+
+  <div class="row">
+    <label>
+      <input type="checkbox" id="enabledByDefault">
+      Enabled by default for new compose windows
+    </label>
+  </div>
+
+  <div class="row">
+    <label for="maxBytes">Max inline image size (bytes)</label>
+    <input type="number" id="maxBytes" min="100000" step="100000">
+    <div class="hint">Example: 2500000 is about 2.5 MB</div>
+  </div>
+
+  <div class="row">
+    <label for="maxWidth">Max width (px)</label>
+    <input type="number" id="maxWidth" min="200" step="50">
+  </div>
+
+  <div class="row">
+    <label for="maxHeight">Max height (px)</label>
+    <input type="number" id="maxHeight" min="200" step="50">
+  </div>
+
+  <div class="row">
+    <label>
+      <input type="checkbox" id="convertToJpeg">
+      Convert pasted images to JPEG
+    </label>
+  </div>
+
+  <div class="row">
+    <label for="jpegQuality">JPEG quality (0.10 to 0.95)</label>
+    <input type="number" id="jpegQuality" min="0.1" max="0.95" step="0.05">
+  </div>
+
+  <div class="row">
+    <label for="oversizedBehavior">If oversized</label>
+    <select id="oversizedBehavior">
+      <option value="insert_link">Insert link instead</option>
+      <option value="do_nothing">Do nothing</option>
+    </select>
+  </div>
+
+  <button id="save">Save</button>
+  <span id="status" class="hint"></span>
+
+  <script src="options.js"></script>
+</body>
+</html>

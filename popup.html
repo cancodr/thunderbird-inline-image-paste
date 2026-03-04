@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body{
+      margin: 6px 0;
+      font: menu;
+      min-width: 0;          /* wider popup */
+    }
+
+    .item{
+      position: relative;
+      padding: 5px 10px 5px 22px;  /* left padding reserves space for checkmark */
+      cursor: default;
+      user-select: none;
+      white-space: nowrap;
+      box-sizing: border-box;
+    }
+
+    .item:hover{
+      background: rgba(0,0,0,0.12);
+    }
+
+    .item[aria-checked="true"]::before{
+      content: "✓";
+      position: absolute;
+      left: 8px;                /* always visible */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .sep {
+      height: 1px;
+      margin: 6px 0;
+      background: rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="item" data-mode="off">Off</div>
+  <div class="item" data-mode="auto">Auto, PNG if transparent</div>
+  <div class="item" data-mode="png">PNG, preserve transparency</div>
+  <div class="item" data-mode="jpeg">JPG, white background</div>
+
+  <div class="sep"></div>
+
+  <div class="item" data-open-options="1">Settings…</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
