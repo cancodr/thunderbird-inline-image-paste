@@ -1,6 +1,9 @@
 # Changelog
 
-## 1.0
+## 1.0.1
+- Added 64x64 extension icon for improved display on high-DPI systems.
+
+## 1.0.0
 Initial release
 
 Features:
