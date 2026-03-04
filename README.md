@@ -18,4 +18,4 @@ Pastes clipboard images inline in Thunderbird compose windows.
 - The add-on registers compose scripts at runtime via `browser.composeScripts.register()`.
 
 ## License
-MIT (or whichever you choose)
+MIT
